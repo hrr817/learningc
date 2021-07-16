@@ -31,6 +31,24 @@
 // ||	        Logical OR. True only if either one operand is true       If c = 5 and d = 2 then, expression ((c==5) || (d>5)) equals to 1.
 // !	        Logical NOT. True only if the operand is 0          	   If c = 5 then, expression !(c==5) equals to 0.
 
+/* Bitwise Operators, will be explained in later sections */
+// During computation, mathematical operations like: addition, subtraction, multiplication, division, etc are converted to bit-level which makes processing faster and saves power.
+// Bitwise operators are used in C programming to perform bit-level operations.
+
+// Operators	Meaning of operators
+// &	         Bitwise AND
+// |	         Bitwise OR
+// ^	         Bitwise exclusive OR
+// ~	         Bitwise complement
+// <<	         Shift left
+// >>	         Shift right
+
+/* Comma Operator */
+// Comma operators are used to link related expressions together. e.g.: int a, b = 3, c;
+
+/* sizeof Operator */
+// The sizeof is a unary operator that returns the size of data(constants, variables, array, structure, etc).
+
 #include <stdio.h>
 
 int main()
@@ -41,8 +59,8 @@ int main()
    int z = x + y;
    printf("---------------- Arithmatic Operators -----------------\n");
    printf("x = %d and y = %d\n", x, y);
-   printf("Sum of x and y is %d\n", z);
-
+   printf("Sum of x and y or z is %d\n", z);
+   printf("Sized of z is %lu bytes\n", sizeof(z));
    /* Relational Operators */
    printf("---------------- Relational Operators -----------------\n");
    printf("%d\n", 5 > 3);  // returns 1, as 5 is greater than 3
