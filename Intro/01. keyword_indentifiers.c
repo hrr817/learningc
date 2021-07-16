@@ -6,14 +6,14 @@
 
 /* Keywords (reserved)*/
 /* C is case sensitive language, these keyword must be written lowercase */
-// auto	double	int	struct
-// break	else	long	switch
-// case	enum	register	typedef
-// char	extern	return	union
-// continue	for	signed	void
-// do	if	static	while
-// default	goto	sizeof	volatile
-// const	float	short	unsigned
+// auto	     double	   int	     struct
+// break	     else	   long	     switch
+// case	     enum	   register	  typedef
+// char	     extern	   return	  union
+// continue	  for	      signed	  void
+// do	if	     static	   while
+// default	  goto	   sizeof	  volatile
+// const	     float	   short	     unsigned
 
 /* Identifiers */
 // name for  variables, functions, structures etc.
