@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// Below is also an example of how to pass arrays to functions
+
 /**
  * @param m = number of rows
  * @param n = number of columns
@@ -7,7 +9,9 @@
  * @param name = matrix name 
  * @returns nothing but fills the given matrix
  */
-void scanMatrix(int m, int n, float matrix[m][n], char name)
+void scanMatrix(int m, int n, float matrix[][n], char name)
+// When passing two dimensional arrays
+// it is not mandatory to specify the number of rows in the array. However, the number of columns should always be specified.
 {
    printf("Enter values for matrix %c (%d x %d): \n", name, m, n);
    for (int i = 0; i < m; i++)
