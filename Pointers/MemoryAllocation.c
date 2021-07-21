@@ -13,7 +13,7 @@ int main()
    // allocate contiguous memory for array
    int *ptr = (int *)calloc(size, sizeof(int));
 
-   // in case allocation of memory fails print out error and exit the programs
+   // in case allocation of memory fails print out error and exit the program
    if (ptr == NULL)
    {
       printf("\nError: failed to allocate memory!");
