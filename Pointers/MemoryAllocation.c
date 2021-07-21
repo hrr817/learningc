@@ -4,13 +4,14 @@
 int main()
 {
    // We will dynamically allocate memory using calloc for array,
-   // calloc creates contiguous and initializes all bits to zero
+   // calloc initializes all bits to zero
    int size = 0;
 
    printf("Enter the number of elements: ");
    scanf("%d", &size);
 
    // allocate contiguous memory for array
+   // note: malloc is faster than calloc, use malloc unless we need to zero-initialization
    int *ptr = (int *)calloc(size, sizeof(int));
 
    // in case allocation of memory fails print out error and exit the program
