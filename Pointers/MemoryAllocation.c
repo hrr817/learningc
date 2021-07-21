@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include <stdlib.h> // malloc, calloc, realloc and free functions are in this library make sure to include these libraries
 
 int main()
 {
