@@ -37,4 +37,7 @@ int main()
       printf("Course: %s\n", students[i].course);
    }
    printf("------------------------------------------------\n");
+
+   // free allocated memory
+   free(students);
 }
