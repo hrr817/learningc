@@ -1,4 +1,5 @@
 /* How to create/open and write to a file*/
+#include <stddef.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -26,6 +27,7 @@ int main() {
     line copy;
     copy.x = a.x + (float)i;
     copy.y = a.y + (float)i;
+    // unsigned long numberOfItems; for storing return value of fwrite (number of items successfully wrote) 
     fwrite(&copy, sizeof(copy), 1, fptr); // moves pointer by the number of bytes wrote therefore results in appending of data at the end after each write
   }
 
