@@ -2,6 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+typedef struct Line {
+  float x;
+  float y;
+} line;
+
 int main() {
   FILE *fptr = fopen("./sample.bin", "rb");
 
@@ -11,14 +16,14 @@ int main() {
   }
 
   // varible for storing data
-  char text[50];
+  line temp;
 
-  // read data and store it in variable
-  fread(text, sizeof(char), 50, fptr); // (array where elements will be stored, size of each element to be read in bytes, number of elements to be read, input stream to read from)
-
-  // print the read data
-  printf("Text: %s", text);
-
+  for (int i = 0; i < 5; i++) {
+    // read data and store it in variable
+    // params(array where elements will be stored, size of each element to be read in bytes, number of elements to be read, input, stream to read from)
+    fread(&temp, sizeof(temp), 1, fptr);
+    printf("Line %d: %.2f %.2f\n", i + 1, temp.x, temp.y);
+  }
   // close file
   fclose(fptr);
 }
