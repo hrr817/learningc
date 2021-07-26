@@ -16,8 +16,8 @@ int main() {
   printf("Enter text (will be saved in binary): ");
   fgets(text, sizeof(text), stdin);
 
-  // write taken input to file, fwrite(data to write, size of one element in bytes, total size in bytes, output stream)
-  fwrite(text, 1, sizeof(text), fptr);
+  // write taken input to file, fwrite(array where elements are copied from, size of each element in bytes, number of elements to write, output stream)
+  fwrite(text, sizeof(text), 50, fptr);
 
   // close file
   fclose(fptr);
