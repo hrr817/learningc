@@ -21,7 +21,7 @@ int main() {
   for (int i = 0; i < 5; i++) {
     // read data and store it in variable
     // params(array where elements will be stored, size of each element to be read in bytes, number of elements to be read, input, stream to read from)
-    fread(&temp, sizeof(temp), 1, fptr);
+    fread(&temp, sizeof(temp), 1, fptr); // moves pointer by number of bytes read
     printf("Line %d: %.2f %.2f\n", i + 1, temp.x, temp.y);
   }
   // close file

@@ -26,7 +26,7 @@ int main() {
     line copy;
     copy.x = a.x + (float)i;
     copy.y = a.y + (float)i;
-    fwrite(&copy, sizeof(copy), 1, fptr);
+    fwrite(&copy, sizeof(copy), 1, fptr); // moves pointer by the number of bytes wrote therefore results in appending of data at the end after each write
   }
 
   // close file
