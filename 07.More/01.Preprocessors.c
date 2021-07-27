@@ -17,7 +17,7 @@
 // the block of code inside ifdef and endif will only
 // be compiled if WHITE macro is declared
 #ifdef WHITE
-#define BLACK "#000"
+  #define BLACK "#000"
 #endif
 
 // #if, #elif and #else Directive
